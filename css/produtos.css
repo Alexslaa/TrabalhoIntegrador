@@ -1,17 +1,21 @@
-
-.feedback
+.container
 {
-    text-align: center;
-    position: relative;
-    top: 30px;
+    margin-top: 90px;
+}
 
+
+.row
+{
+    position: relative;
+    top: 0px;
+    bottom: 50px;
 }
 
 .card
 {
     position: relative;
     bottom: 40px;
-    width: 300px;
+    width: 500px;
     height: 400px;
     background: #888888;
     border-radius: 20px;

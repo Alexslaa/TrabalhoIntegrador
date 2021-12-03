@@ -18,35 +18,41 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-      <a href="" class="navbar-brand mb-0 h1">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a href="index.html" class="navbar-brand mb-0 h1">
         <img class="d-inline-block align-top" src="imgs/logo2.png" width="185" height="60" />
       </a>
+      <button type = "button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class = "navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class = "navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a href="#" class="nav-link active">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
               Homepage
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              Sobre nós
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class = "nav-item dropdown">
+            <a href = "#" class = "nav-link dropdown-toggle" id="navbarDropdown" role = "button" data-bs-toggle="dropdown" aria-expanded="false">
               Produtos
             </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a href="produtos.html?categoria=3" class="dropdown-item">Cadeiras</a></li>
+              <li><a href="produtos.html?categoria=2" class="dropdown-item">Headsets</a></li>
+              <li><a href="produtos.html?categoria=1" class="dropdown-item">Mouses</a></li>
+            </ul>
           </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="loginpage.html" class="nav-link">
+          <li class="nav-item active">
+            <a href="loginpage.html" class="nav-link active">
               Login
             </a>
           </li>
-        </ul>
+          <li class="nav-item">
+            <a href="cadastroprodutos.html" class="nav-link">
+              Cadastrar Produtos
+            </a>
+          </li>
+        </ul> 
       </div>
     </nav>
   </header>
@@ -65,7 +71,7 @@
       <div class="pass">Forgot Password?</div>
       <input type="submit" value="Login">
       <div class="signup_link">
-        Not a member? <a href="cadastro.php">Singup</a>
+        Não tem conta? <a href="cadastro.html">Registrar</a>
       </div>
     </form>
   </div>
